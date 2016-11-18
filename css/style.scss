@@ -1,5 +1,11 @@
 @import "variables";
 
+@mixin vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   font-family: sans-serif;
@@ -61,7 +67,6 @@ body {
   clear: both;
   float: right;
   margin-right: 100px;
-  // width: 50%;
   text-align: center;
   display: block;
   position: relative;
@@ -80,10 +85,18 @@ body {
   font-weight: bold;
 }
 
+.menu-item:hover {
+  color: $highlight-color;
+}
+
 .menu-highlight {
   padding: 20px;
   padding-top: 30px;
   background-color: $highlight-color;
+}
+
+.menu-highlight:hover {
+  color: $navbar-color;
 }
 
 .main-section {
@@ -141,9 +154,18 @@ body {
     background-color: $highlight-color;
   }
 
+  .tab-highlight:hover {
+    color: $navbar-color;
+  }
+
+
   .tab {
     color: $navbar-color;
     background-color: $tab-color;
+  }
+
+  .tab:hover {
+    color: $highlight-color;
   }
 
   .main-right>hr {
@@ -229,15 +251,62 @@ body {
   bottom: 30px;
 }
 
-.book{
+.book {
   height: 200px;
-  width: 50px;
-  object-fit: contain;
-  float: left;
   width: 20%;
+  float: left;
   margin-left: 4%;
   margin-bottom: 40px;
   margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bookimg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.bookcover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  color: white;
+  opacity: 0;
+}
+
+.book:hover {
+  .bookcover {
+    opacity: 1;
+  }
+}
+
+.booktitle, .bookinfo, .bookreview {
+  text-align: center;
+}
+
+.booktitle {
+  margin-top: 25px;
+}
+
+.bookinfo {
+  font-size: 10px;
+  color: $highlight-color;
+}
+.bookreview {
+  font-size: 10px;
+  color: white;
+}
+.bookcover>img {
+  height: 30px;
+  width: 40px;
+  display: block;
+  margin: 0 auto;
 }
 
 .icons {
@@ -246,13 +315,15 @@ body {
 }
 
 .footer-text {
+  clear: both;
   font-size: small;
   color: white;
   height: 10px;
+  margin-left: 110px;
   padding-bottom: 13px;
   position: relative;
-  top: 2px;
-  left: 205px;
+  top: 5px;
+  left: 100px;
 }
 
 .space {

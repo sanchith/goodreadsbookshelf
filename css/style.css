@@ -63,10 +63,16 @@ body {
   font-size: small;
   font-weight: bold; }
 
+.menu-item:hover {
+  color: #ce993d; }
+
 .menu-highlight {
   padding: 20px;
   padding-top: 30px;
   background-color: #ce993d; }
+
+.menu-highlight:hover {
+  color: #2d2d2d; }
 
 .main-section {
   clear: both;
@@ -115,9 +121,15 @@ body {
   color: white;
   background-color: #ce993d; }
 
+.tab-highlight:hover {
+  color: #2d2d2d; }
+
 .tab {
   color: #2d2d2d;
   background-color: #e4e4e4; }
+
+.tab:hover {
+  color: #ce993d; }
 
 .main-right > hr {
   text-align: center;
@@ -188,26 +200,67 @@ body {
 
 .book {
   height: 200px;
-  width: 50px;
-  object-fit: contain;
-  float: left;
   width: 20%;
+  float: left;
   margin-left: 4%;
   margin-bottom: 40px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden; }
+
+.bookimg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; }
+
+.bookcover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0; }
+
+.book:hover .bookcover {
+  opacity: 1; }
+
+.booktitle, .bookinfo, .bookreview {
+  text-align: center; }
+
+.booktitle {
+  margin-top: 25px; }
+
+.bookinfo {
+  font-size: 10px;
+  color: #ce993d; }
+
+.bookreview {
+  font-size: 10px;
+  color: white; }
+
+.bookcover > img {
+  height: 30px;
+  width: 40px;
+  display: block;
+  margin: 0 auto; }
 
 .icons {
   height: 50px;
   width: 50px; }
 
 .footer-text {
+  clear: both;
   font-size: small;
   color: white;
   height: 10px;
+  margin-left: 110px;
   padding-bottom: 13px;
   position: relative;
-  top: 2px;
-  left: 205px; }
+  top: 5px;
+  left: 100px; }
 
 .space {
   word-spacing: 5px; }
