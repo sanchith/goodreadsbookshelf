@@ -144,7 +144,6 @@ body {
   height: 500px;
   margin-left: 50px;
   background-color: #e4e4e4;
-  color: #2d2d2d;
   overflow-y: scroll; }
 
 .options-text {
@@ -155,10 +154,17 @@ body {
 .sort, .recos, .stats, .bestsellers, .profile, .bookclub, .network {
   margin-top: 20px; }
 
+.icon-hover {
+  height: 50px;
+  width: 50px;
+  margin-left: 50px;
+  display: none; }
+
 .icons {
   margin-left: 50px; }
 
 .sort > p, .recos > p, .stats > p, .bestsellers > p, .profile > p, .bookclub > p, .network > p {
+  color: #2d2d2d;
   position: relative;
   top: -10px; }
 
@@ -182,6 +188,12 @@ body {
 
 .network > p {
   margin-left: 37px; }
+
+.sort:hover .icons, .stats:hover .icons, .bestsellers:hover .icons, .recos:hover .icons, .bookclub:hover .icons, .network:hover .icons, .profile:hover .icons {
+  display: none; }
+.sort:hover .icon-hover, .stats:hover .icon-hover, .bestsellers:hover .icon-hover, .recos:hover .icon-hover, .bookclub:hover .icon-hover, .network:hover .icon-hover, .profile:hover .icon-hover {
+  display: block;
+  margin-bottom: 10px; }
 
 .books-display {
   float: right;

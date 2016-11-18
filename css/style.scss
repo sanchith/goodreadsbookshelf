@@ -182,7 +182,7 @@ body {
     height: 500px;
     margin-left: 50px;
     background-color: $tab-color;
-    color: $navbar-color;
+    // color: $navbar-color;
     overflow-y: scroll;
   }
 
@@ -196,11 +196,19 @@ body {
   margin-top: 20px;
 }
 
+.icon-hover {
+  height: 50px;
+  width: 50px;
+  margin-left: 50px;
+  display: none;
+}
+
 .icons {
   margin-left: 50px;
 }
 
 .sort>p, .recos>p, .stats>p, .bestsellers>p, .profile>p, .bookclub>p, .network>p {
+  color: $navbar-color;
   position: relative;
   top: -10px;
 }
@@ -232,6 +240,16 @@ body {
 
 .network>p {
   margin-left: 37px;
+}
+
+.sort:hover, .stats:hover, .bestsellers:hover, .recos:hover, .bookclub:hover, .network:hover, .profile:hover {
+  .icons {
+    display: none;
+  }
+  .icon-hover {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
 
 .books-display {
