@@ -9,8 +9,8 @@ body {
   margin: 10px 100px;
   height: 70px; }
 
-.logo-text > h1 {
-  color: white; }
+.logo-text > img {
+  height: 80px; }
 
 .header-input {
   border: 0;
@@ -30,11 +30,14 @@ body {
   float: left; }
 
 .header-search {
-  float: right; }
+  float: right;
+  position: relative;
+  top: 20px; }
 
 .main-nav {
   background-color: #2d2d2d;
   height: 30px;
+  margin-top: 20px;
   overflow: hidden; }
 
 .sub-nav {
@@ -67,7 +70,7 @@ body {
 
 .main-section {
   clear: both;
-  height: 870px;
+  height: 600px;
   width: 85%;
   background-color: #fffdff;
   margin: 10px 100px; }
@@ -75,7 +78,7 @@ body {
 .main-search {
   float: left;
   margin-left: 50px;
-  margin-top: 23px;
+  margin-top: 28px;
   width: 20%; }
 
 .main-input {
@@ -126,14 +129,15 @@ body {
   clear: both;
   float: left;
   width: 20%;
+  height: 500px;
   margin-left: 50px;
   background-color: #e4e4e4;
   color: #2d2d2d;
-  overflow: hidden; }
+  overflow-y: scroll; }
 
 .options-text {
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
   line-height: 30px; }
 
 .sort, .recos, .stats, .bestsellers, .profile, .bookclub, .network {
@@ -170,15 +174,17 @@ body {
 .books-display {
   float: right;
   width: 65%;
+  height: 500px;
   margin-right: 50px;
-  background-color: #e4e4e4; }
+  background-color: #e4e4e4;
+  overflow-y: scroll; }
 
 .row {
   clear: both;
   float: left;
   position: relative;
-  top: 10px;
-  bottom: 50px; }
+  top: 2px;
+  bottom: 30px; }
 
 .book {
   height: 200px;
@@ -194,28 +200,14 @@ body {
   height: 50px;
   width: 50px; }
 
-.footer {
-  clear: both;
-  height: 35px;
-  background-color: #fffdff;
-  margin-top: 10px;
-  margin-left: 100px;
-  margin-right: 92px;
-  overflow: hidden; }
-
-.footer-tab {
-  height: 23px;
-  margin: 5px 50px;
-  background-color: #e4e4e4;
-  font-size: small; }
-
 .footer-text {
   font-size: small;
   color: white;
+  height: 10px;
   padding-bottom: 13px;
   position: relative;
-  top: 5px;
-  left: 220px; }
+  top: 2px;
+  left: 205px; }
 
 .space {
   word-spacing: 5px; }

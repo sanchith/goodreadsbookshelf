@@ -12,12 +12,11 @@ body {
 .header {
   margin: 10px 100px;
   height: 70px;
-  // position: fixed;
 }
 
-.logo-text>h1 {
-  color: white;
-  // position: fixed;
+.logo-text>img {
+  height: 80px;
+  // width: 250px;
 }
 
 .header-input {
@@ -42,20 +41,20 @@ body {
 
 .header-search {
   float: right;
-  // position: fixed;
+  position: relative;
+  top: 20px;
 }
 
 .main-nav {
   background-color: $navbar-color;
   height: 30px;
+  margin-top: 20px;
   overflow: hidden;
-  // position: fixed;
 }
 
 .sub-nav {
   background-color: $subnavbar-color;
   height: 12px;
-  // position: fixed;
 }
 
 .main-menu {
@@ -89,16 +88,17 @@ body {
 
 .main-section {
   clear: both;
-  height: 870px;
+  height: 600px;
   width: 85%;
   background-color: $mainsection-color;
   margin: 10px 100px;
+  // position: fixed;
 }
 
 .main-search {
   float: left;
   margin-left: 50px;
-  margin-top: 23px;
+  margin-top: 28px;
   width: 20%;
 }
 
@@ -157,16 +157,16 @@ body {
     clear: both;
     float: left;
     width: 20%;
-    // height: 80%;
+    height: 500px;
     margin-left: 50px;
     background-color: $tab-color;
     color: $navbar-color;
-    overflow: hidden;
+    overflow-y: scroll;
   }
 
   .options-text {
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     line-height: 30px;
   }
 
@@ -215,18 +215,18 @@ body {
 .books-display {
   float: right;
   width: 65%;
-  // height: 500px;
+  height: 500px;
   margin-right: 50px;
   background-color: $tab-color;
-  // overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .row {
   clear: both;
   float: left;
   position: relative;
-  top: 10px;
-  bottom: 50px;
+  top: 2px;
+  bottom: 30px;
 }
 
 .book{
@@ -245,30 +245,14 @@ body {
   width: 50px;
 }
 
-.footer {
-  clear: both;
-  height: 35px;
-  background-color: $mainsection-color;
-  margin-top: 10px;
-  margin-left: 100px;
-  margin-right: 92px;
-  overflow: hidden;
-}
-
-.footer-tab {
-  height: 23px;
-  margin: 5px 50px;
-  background-color: $tab-color;
-  font-size: small;
-}
-
 .footer-text {
   font-size: small;
   color: white;
+  height: 10px;
   padding-bottom: 13px;
   position: relative;
-  top: 5px;
-  left: 220px;
+  top: 2px;
+  left: 205px;
 }
 
 .space {
