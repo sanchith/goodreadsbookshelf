@@ -22,7 +22,6 @@ body {
 
 .logo-text>img {
   height: 80px;
-  // width: 250px;
 }
 
 .header-input {
@@ -55,7 +54,6 @@ body {
   background-color: $navbar-color;
   height: 30px;
   margin-top: 20px;
-  overflow: hidden;
 }
 
 .sub-nav {
@@ -64,9 +62,9 @@ body {
 }
 
 .main-menu {
-  clear: both;
+  // clear: both;
   float: right;
-  margin-right: 100px;
+  // margin-right: 100px;
   text-align: center;
   display: block;
   position: relative;
@@ -90,13 +88,60 @@ body {
 }
 
 .menu-highlight {
-  padding: 20px;
-  padding-top: 30px;
+  padding: 5px;
+  padding-top: 15px;
   background-color: $highlight-color;
 }
 
 .menu-highlight:hover {
   color: $navbar-color;
+}
+
+#dropdownmenu1, #dropdownmenu2 {
+  float: right;
+  width: 60px;
+  font-size: small;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  bottom: 3px;
+}
+
+#dropdownmenu1 {
+  margin-left: 7px;
+}
+
+#dropdownmenu2 {
+  margin-right: 115px;
+}
+
+#dropdownmenu1:hover, #dropdownmenu2:hover {
+  cursor: pointer;
+  color: $highlight-color;
+}
+
+#dropdownmenu1 li, #dropdownmenu2 li {
+  font-size: .75em;
+  list-style: none;
+  display: none;
+  background-color: $navbar-color;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#dropdownmenu1 li {
+  width: 60px;
+}
+
+#dropdownmenu2 li {
+  width: 80px;
+}
+
+#dropdownmenu1:hover,  #dropdownmenu2:hover {
+  li{
+  display: block;
+  }
 }
 
 .main-section {
@@ -105,7 +150,8 @@ body {
   width: 85%;
   background-color: $mainsection-color;
   margin: 10px 100px;
-  // position: fixed;
+  z-index: -1;
+  position: absolute;
 }
 
 .main-search {
@@ -337,10 +383,11 @@ body {
   font-size: small;
   color: white;
   height: 10px;
+  width: 100%;
   margin-left: 110px;
   padding-bottom: 13px;
-  position: relative;
-  top: 5px;
+  position: absolute;
+  top: 765px;
   left: 100px;
 }
 
