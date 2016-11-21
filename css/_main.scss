@@ -1,0 +1,249 @@
+//main section
+.main-section {
+  clear: both;
+  height: 600px;
+  background-color: $mainsection-color;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  z-index: -1;
+  position: absolute;
+
+  .main-search {
+    float: left;
+    margin-left: 50px;
+    margin-top: 28px;
+    width: 20%;
+    .main-input {
+      border: 0;
+      border-bottom: 1px solid $navbar-color;
+      width: 128px;
+      padding-bottom: 12px;
+      font-size: small;
+      background-color: $mainsection-color;
+      position: relative;
+      top: -12px;
+    }
+    .main-search-icon {
+      height: 20px;
+      width: 20px;
+      position: relative;
+      top: -3px;
+      left: -10px;
+    }
+  } //end of main search
+
+  .tools-menu {
+    float: right;
+    width: 15%;
+    margin: 0;
+    margin-top: 15px;
+    margin-right: 20px;
+    display: none;
+    h5 {
+      color: $navbar-color;
+      padding: 5px;
+      text-align: center;
+      background-color: $tab-color;
+      border: 1px solid $navbar-color;
+      border-radius: 3px;
+    }
+    h5:hover {
+      color: $highlight-color;
+      border: 1px solid $highlight-color;
+    }
+  } //end of tools menu
+
+  .main-right {
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 65%;
+
+    .main-tabs {
+      h5 {
+        display: inline;
+        padding: 10px;
+        margin-right: 20px;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+      }
+      .tab-highlight {
+        color: white;
+        background-color: $highlight-color;
+      }
+      .tab-highlight:hover {
+        color: $navbar-color;
+      }
+      .tab {
+        color: $navbar-color;
+        background-color: $tab-color;
+      }
+      .tab:hover {
+        color: $highlight-color;
+      }
+    }
+
+    hr {
+      text-align: center;
+      width: 99.5%;
+      border: 1px solid $highlight-color;        position: relative;
+    }
+
+  } //end of main right (tabs)
+
+  .filter-options {
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 500px;
+    margin-left: 50px;
+    background-color: $tab-color;
+    overflow-y: scroll;
+
+    .options-text {
+      margin-left: 4%;
+      margin-right: 4%;
+      margin-top: 20px;
+      line-height: 30px;
+
+      .sort, .recos, .stats, .bestsellers, .profile, .bookclub, .network {
+        margin-top: 20px;
+      }
+      .icons {
+        height: 50px;
+        width: 50px;
+        margin-left: 38%;
+      }
+      .icon-hover {
+        height: 50px;
+        width: 50px;
+        margin-left: 38%;
+        display: none;
+      }
+      .sort, .recos, .stats, .bestsellers, .profile, .bookclub, .network {
+        p {
+          color: $navbar-color;
+          position: relative;
+          top: -10px;
+        }
+      }
+      .sort, .stats {
+        p {
+          margin-left: 40%;
+        }
+      }
+      .bestsellers {
+        p {
+          margin-left: 30%;
+        }
+      }
+      .recos {
+        p {
+          margin-left: 17%;
+        }
+      }
+      .bookclub {
+        p {
+          margin-left: 32%;
+        }
+      }
+      .network {
+        p {
+          margin-left: 30%;
+        }
+      }
+      .profile {
+        p {
+          margin-left: 39%;
+        }
+      }
+      .sort:hover, .stats:hover, .bestsellers:hover, .recos:hover, .bookclub:hover, .network:hover, .profile:hover {
+        .icons {
+          display: none;
+        }
+        .icon-hover {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+
+    } //end of options-text
+  } //end of filter-options
+
+.books-display {
+  float: right;
+  width: 65%;
+  height: 500px;
+  margin-right: 50px;
+  background-color: $tab-color;
+  overflow-y: scroll;
+
+  .row {
+    clear: both;
+    float: left;
+    position: relative;
+    top: 2px;
+    bottom: 30px;
+
+    .book {
+      height: 200px;
+      width: 20%;
+      float: left;
+      margin-left: 4%;
+      margin-bottom: 40px;
+      margin-top: 20px;
+      position: relative;
+      overflow: hidden;
+
+      .bookimg {
+        height: 100%;
+        width: 100%;
+        // object-fit: contain;
+      }
+
+      .bookcover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        color: white;
+        opacity: 0;
+
+        .booktitle, .bookinfo, .bookreview {
+          text-align: center;
+        }
+        .booktitle {
+          margin-top: 25px;
+        }
+        .bookinfo {
+          font-size: 10px;
+          color: $highlight-color;
+        }
+        .bookreview {
+          font-size: 10px;
+          color: white;
+        }
+        img {
+          height: 30px;
+          width: 40px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    } //end of book
+
+    .book:hover {
+      .bookcover {
+        opacity: 1;
+      }
+    }
+
+  } //end of row
+} //end of books-display
+
+} //End of main section

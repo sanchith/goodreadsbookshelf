@@ -1,0 +1,97 @@
+//main and sub navigation bars
+.main-nav {
+  background-color: $navbar-color;
+  height: 30px;
+  margin-top: 25px;
+
+  .main-nav-menu{
+    .dropdownmenu1, .dropdownmenu2 {
+      float: right;
+      width: 60px;
+      font-size: small;
+      font-weight: bold;
+      color: white;
+      position: relative;
+      bottom: 3px;
+    }
+    .dropdownmenu1 {
+      margin-left: 7px;
+    }
+    .dropdownmenu2 {
+      margin-right: 115px;
+    }
+    .dropdownmenu1:hover, .dropdownmenu2:hover {
+      cursor: pointer;
+      color: $highlight-color;
+    }
+    .dropdownmenu1 li, .dropdownmenu2 li {
+      font-size: .85em;
+      list-style: none;
+      display: none;
+      background-color: $navbar-color;
+      color: white;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+    .dropdownmenu1 li {
+      width: 90px;
+    }
+    .dropdownmenu2 li {
+      width: 90px;
+    }
+    .dropdownmenu1:hover,  .dropdownmenu2:hover {
+      li{
+      display: block;
+      }
+    }
+    .dropdownmenu1 li:hover, .dropdownmenu2 li:hover {
+      color: $highlight-color;
+    }
+  }
+
+  .main-nav-hamburger {
+    img {
+      clear: both;
+      float: right;
+      height: 20px;
+      width: 30px;
+      margin-top: 3px;
+      margin-right: 10px;
+      display: none;
+    }
+  }
+
+  .main-menu {
+    float: right;
+    text-align: center;
+    display: block;
+    position: relative;
+    bottom: 9px;
+    li {
+      display: inline;
+      a {
+        text-decoration: none;
+        color: white;
+        margin-left: 50px;
+        font-size: small;
+        font-weight: bold;
+      }
+      .menu-item:hover {
+        color: $highlight-color;
+      }
+      .menu-highlight {
+        padding: 5px;
+        padding-top: 15px;
+        background-color: $highlight-color;
+      }
+      .menu-highlight:hover {
+        color: $navbar-color;
+      }
+    }
+  }
+} //end of main nav
+
+.sub-nav {
+  background-color: $subnavbar-color;
+  height: 12px;
+}

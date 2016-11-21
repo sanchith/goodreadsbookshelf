@@ -9,117 +9,96 @@ body {
   margin-left: 100px;
   margin-right: 100px;
   height: 70px; }
-
-.logo {
-  float: left; }
-
-.header-search {
-  float: right;
-  position: relative;
-  top: 20px; }
-
-.logo > img {
-  height: 80px; }
-
-.header-input {
-  border: 0;
-  border-bottom: 1px solid white;
-  width: 150px;
-  padding-bottom: 10px;
-  font-size: small;
-  background-color: #71120a; }
-
-.hdr-search-icon {
-  height: 20px;
-  width: 20px;
-  position: relative;
-  top: 7px; }
+  .header .logo {
+    float: left; }
+    .header .logo img {
+      height: 80px; }
+  .header .header-search {
+    float: right;
+    position: relative;
+    top: 20px; }
+    .header .header-search .header-input {
+      border: 0;
+      border-bottom: 1px solid white;
+      width: 150px;
+      padding-bottom: 10px;
+      font-size: small;
+      background-color: #71120a; }
+    .header .header-search .hdr-search-icon {
+      height: 20px;
+      width: 20px;
+      position: relative;
+      top: 7px; }
 
 .main-nav {
   background-color: #2d2d2d;
   height: 30px;
   margin-top: 25px; }
+  .main-nav .main-nav-menu .dropdownmenu1, .main-nav .main-nav-menu .dropdownmenu2 {
+    float: right;
+    width: 60px;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    bottom: 3px; }
+  .main-nav .main-nav-menu .dropdownmenu1 {
+    margin-left: 7px; }
+  .main-nav .main-nav-menu .dropdownmenu2 {
+    margin-right: 115px; }
+  .main-nav .main-nav-menu .dropdownmenu1:hover, .main-nav .main-nav-menu .dropdownmenu2:hover {
+    cursor: pointer;
+    color: #ce993d; }
+  .main-nav .main-nav-menu .dropdownmenu1 li, .main-nav .main-nav-menu .dropdownmenu2 li {
+    font-size: .85em;
+    list-style: none;
+    display: none;
+    background-color: #2d2d2d;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px; }
+  .main-nav .main-nav-menu .dropdownmenu1 li {
+    width: 90px; }
+  .main-nav .main-nav-menu .dropdownmenu2 li {
+    width: 90px; }
+  .main-nav .main-nav-menu .dropdownmenu1:hover li, .main-nav .main-nav-menu .dropdownmenu2:hover li {
+    display: block; }
+  .main-nav .main-nav-menu .dropdownmenu1 li:hover, .main-nav .main-nav-menu .dropdownmenu2 li:hover {
+    color: #ce993d; }
+  .main-nav .main-nav-hamburger img {
+    clear: both;
+    float: right;
+    height: 20px;
+    width: 30px;
+    margin-top: 3px;
+    margin-right: 10px;
+    display: none; }
+  .main-nav .main-menu {
+    float: right;
+    text-align: center;
+    display: block;
+    position: relative;
+    bottom: 9px; }
+    .main-nav .main-menu li {
+      display: inline; }
+      .main-nav .main-menu li a {
+        text-decoration: none;
+        color: white;
+        margin-left: 50px;
+        font-size: small;
+        font-weight: bold; }
+      .main-nav .main-menu li .menu-item:hover {
+        color: #ce993d; }
+      .main-nav .main-menu li .menu-highlight {
+        padding: 5px;
+        padding-top: 15px;
+        background-color: #ce993d; }
+      .main-nav .main-menu li .menu-highlight:hover {
+        color: #2d2d2d; }
 
 .sub-nav {
   background-color: #131512;
   height: 12px; }
-
-.main-menu {
-  float: right;
-  text-align: center;
-  display: block;
-  position: relative;
-  bottom: 9px; }
-
-.main-menu > li {
-  display: inline; }
-
-.main-menu > li > a {
-  text-decoration: none;
-  color: white;
-  margin-left: 50px;
-  font-size: small;
-  font-weight: bold; }
-
-.menu-item:hover {
-  color: #ce993d; }
-
-.menu-highlight {
-  padding: 5px;
-  padding-top: 15px;
-  background-color: #ce993d; }
-
-.menu-highlight:hover {
-  color: #2d2d2d; }
-
-#dropdownmenu1, #dropdownmenu2 {
-  float: right;
-  width: 60px;
-  font-size: small;
-  font-weight: bold;
-  color: white;
-  position: relative;
-  bottom: 3px; }
-
-#dropdownmenu1 {
-  margin-left: 7px; }
-
-#dropdownmenu2 {
-  margin-right: 115px; }
-
-#dropdownmenu1:hover, #dropdownmenu2:hover {
-  cursor: pointer;
-  color: #ce993d; }
-
-#dropdownmenu1 li, #dropdownmenu2 li {
-  font-size: .85em;
-  list-style: none;
-  display: none;
-  background-color: #2d2d2d;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 5px; }
-
-#dropdownmenu1 li {
-  width: 90px; }
-
-#dropdownmenu2 li {
-  width: 90px; }
-
-#dropdownmenu1:hover li, #dropdownmenu2:hover li {
-  display: block; }
-
-#dropdownmenu1 li:hover, #dropdownmenu2 li:hover {
-  color: #ce993d; }
-
-.main-nav-hamburger > img {
-  clear: both;
-  float: right;
-  height: 20px;
-  width: 30px;
-  margin-top: 3px;
-  margin-right: 10px;
-  display: none; }
 
 .main-section {
   clear: both;
@@ -131,205 +110,166 @@ body {
   margin-right: 100px;
   z-index: -1;
   position: absolute; }
-
-.main-search {
-  float: left;
-  margin-left: 50px;
-  margin-top: 28px;
-  width: 20%; }
-
-.main-input {
-  border: 0;
-  border-bottom: 1px solid #2d2d2d;
-  width: 128px;
-  padding-bottom: 12px;
-  font-size: small;
-  background-color: #fffdff;
-  position: relative;
-  top: -12px; }
-
-.main-search-icon {
-  height: 20px;
-  width: 20px;
-  position: relative;
-  top: -3px;
-  left: -10px; }
-
-.tools-menu {
-  float: right;
-  width: 15%;
-  margin: 0;
-  margin-top: 15px;
-  margin-right: 20px;
-  display: none; }
-
-.tools-menu > h5 {
-  color: #2d2d2d;
-  padding: 5px;
-  text-align: center;
-  background-color: #e4e4e4;
-  border: 1px solid #2d2d2d;
-  border-radius: 3px; }
-
-.tools-menu > h5:hover {
-  color: #ce993d;
-  border: 1px solid #ce993d; }
-
-.main-right {
-  float: right;
-  margin-top: 30px;
-  margin-right: 50px;
-  width: 65%; }
-
-.main-tabs > h5 {
-  display: inline;
-  padding: 10px;
-  margin-right: 20px;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px; }
-
-.tab-highlight {
-  color: white;
-  background-color: #ce993d; }
-
-.tab-highlight:hover {
-  color: #2d2d2d; }
-
-.tab {
-  color: #2d2d2d;
-  background-color: #e4e4e4; }
-
-.tab:hover {
-  color: #ce993d; }
-
-.main-right > hr {
-  text-align: center;
-  width: 99.5%;
-  border: 1px solid #ce993d;
-  position: relative; }
-
-.filter-options {
-  clear: both;
-  float: left;
-  width: 20%;
-  height: 500px;
-  margin-left: 50px;
-  background-color: #e4e4e4;
-  overflow-y: scroll; }
-
-.options-text {
-  margin-left: 4%;
-  margin-right: 4%;
-  margin-top: 20px;
-  line-height: 30px; }
-
-.sort, .recos, .stats, .bestsellers, .profile, .bookclub, .network {
-  margin-top: 20px; }
-
-.icon-hover {
-  height: 50px;
-  width: 50px;
-  margin-left: 38%;
-  display: none; }
-
-.icons {
-  margin-left: 38%; }
-
-.sort > p, .recos > p, .stats > p, .bestsellers > p, .profile > p, .bookclub > p, .network > p {
-  color: #2d2d2d;
-  position: relative;
-  top: -10px; }
-
-.sort > p, .stats > p {
-  margin-left: 40%; }
-
-.bestsellers > p {
-  margin-left: 30%; }
-
-.recos > p {
-  margin-left: 17%; }
-
-.bookclub > p {
-  margin-left: 32%; }
-
-.network > p {
-  margin-left: 30%; }
-
-.profile > p {
-  margin-left: 39%; }
-
-.sort:hover .icons, .stats:hover .icons, .bestsellers:hover .icons, .recos:hover .icons, .bookclub:hover .icons, .network:hover .icons, .profile:hover .icons {
-  display: none; }
-.sort:hover .icon-hover, .stats:hover .icon-hover, .bestsellers:hover .icon-hover, .recos:hover .icon-hover, .bookclub:hover .icon-hover, .network:hover .icon-hover, .profile:hover .icon-hover {
-  display: block;
-  margin-bottom: 10px; }
-
-.books-display {
-  float: right;
-  width: 65%;
-  height: 500px;
-  margin-right: 50px;
-  background-color: #e4e4e4;
-  overflow-y: scroll; }
-
-.row {
-  clear: both;
-  float: left;
-  position: relative;
-  top: 2px;
-  bottom: 30px; }
-
-.book {
-  height: 200px;
-  width: 20%;
-  float: left;
-  margin-left: 4%;
-  margin-bottom: 40px;
-  margin-top: 20px;
-  position: relative;
-  overflow: hidden; }
-
-.bookimg {
-  height: 100%;
-  width: 100%; }
-
-.bookcover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  opacity: 0; }
-
-.book:hover .bookcover {
-  opacity: 1; }
-
-.booktitle, .bookinfo, .bookreview {
-  text-align: center; }
-
-.booktitle {
-  margin-top: 25px; }
-
-.bookinfo {
-  font-size: 10px;
-  color: #ce993d; }
-
-.bookreview {
-  font-size: 10px;
-  color: white; }
-
-.bookcover > img {
-  height: 30px;
-  width: 40px;
-  display: block;
-  margin: 0 auto; }
-
-.icons {
-  height: 50px;
-  width: 50px; }
+  .main-section .main-search {
+    float: left;
+    margin-left: 50px;
+    margin-top: 28px;
+    width: 20%; }
+    .main-section .main-search .main-input {
+      border: 0;
+      border-bottom: 1px solid #2d2d2d;
+      width: 128px;
+      padding-bottom: 12px;
+      font-size: small;
+      background-color: #fffdff;
+      position: relative;
+      top: -12px; }
+    .main-section .main-search .main-search-icon {
+      height: 20px;
+      width: 20px;
+      position: relative;
+      top: -3px;
+      left: -10px; }
+  .main-section .tools-menu {
+    float: right;
+    width: 15%;
+    margin: 0;
+    margin-top: 15px;
+    margin-right: 20px;
+    display: none; }
+    .main-section .tools-menu h5 {
+      color: #2d2d2d;
+      padding: 5px;
+      text-align: center;
+      background-color: #e4e4e4;
+      border: 1px solid #2d2d2d;
+      border-radius: 3px; }
+    .main-section .tools-menu h5:hover {
+      color: #ce993d;
+      border: 1px solid #ce993d; }
+  .main-section .main-right {
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 65%; }
+    .main-section .main-right .main-tabs h5 {
+      display: inline;
+      padding: 10px;
+      margin-right: 20px;
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px; }
+    .main-section .main-right .main-tabs .tab-highlight {
+      color: white;
+      background-color: #ce993d; }
+    .main-section .main-right .main-tabs .tab-highlight:hover {
+      color: #2d2d2d; }
+    .main-section .main-right .main-tabs .tab {
+      color: #2d2d2d;
+      background-color: #e4e4e4; }
+    .main-section .main-right .main-tabs .tab:hover {
+      color: #ce993d; }
+    .main-section .main-right hr {
+      text-align: center;
+      width: 99.5%;
+      border: 1px solid #ce993d;
+      position: relative; }
+  .main-section .filter-options {
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 500px;
+    margin-left: 50px;
+    background-color: #e4e4e4;
+    overflow-y: scroll; }
+    .main-section .filter-options .options-text {
+      margin-left: 4%;
+      margin-right: 4%;
+      margin-top: 20px;
+      line-height: 30px; }
+      .main-section .filter-options .options-text .sort, .main-section .filter-options .options-text .recos, .main-section .filter-options .options-text .stats, .main-section .filter-options .options-text .bestsellers, .main-section .filter-options .options-text .profile, .main-section .filter-options .options-text .bookclub, .main-section .filter-options .options-text .network {
+        margin-top: 20px; }
+      .main-section .filter-options .options-text .icons {
+        height: 50px;
+        width: 50px;
+        margin-left: 38%; }
+      .main-section .filter-options .options-text .icon-hover {
+        height: 50px;
+        width: 50px;
+        margin-left: 38%;
+        display: none; }
+      .main-section .filter-options .options-text .sort p, .main-section .filter-options .options-text .recos p, .main-section .filter-options .options-text .stats p, .main-section .filter-options .options-text .bestsellers p, .main-section .filter-options .options-text .profile p, .main-section .filter-options .options-text .bookclub p, .main-section .filter-options .options-text .network p {
+        color: #2d2d2d;
+        position: relative;
+        top: -10px; }
+      .main-section .filter-options .options-text .sort p, .main-section .filter-options .options-text .stats p {
+        margin-left: 40%; }
+      .main-section .filter-options .options-text .bestsellers p {
+        margin-left: 30%; }
+      .main-section .filter-options .options-text .recos p {
+        margin-left: 17%; }
+      .main-section .filter-options .options-text .bookclub p {
+        margin-left: 32%; }
+      .main-section .filter-options .options-text .network p {
+        margin-left: 30%; }
+      .main-section .filter-options .options-text .profile p {
+        margin-left: 39%; }
+      .main-section .filter-options .options-text .sort:hover .icons, .main-section .filter-options .options-text .stats:hover .icons, .main-section .filter-options .options-text .bestsellers:hover .icons, .main-section .filter-options .options-text .recos:hover .icons, .main-section .filter-options .options-text .bookclub:hover .icons, .main-section .filter-options .options-text .network:hover .icons, .main-section .filter-options .options-text .profile:hover .icons {
+        display: none; }
+      .main-section .filter-options .options-text .sort:hover .icon-hover, .main-section .filter-options .options-text .stats:hover .icon-hover, .main-section .filter-options .options-text .bestsellers:hover .icon-hover, .main-section .filter-options .options-text .recos:hover .icon-hover, .main-section .filter-options .options-text .bookclub:hover .icon-hover, .main-section .filter-options .options-text .network:hover .icon-hover, .main-section .filter-options .options-text .profile:hover .icon-hover {
+        display: block;
+        margin-bottom: 10px; }
+  .main-section .books-display {
+    float: right;
+    width: 65%;
+    height: 500px;
+    margin-right: 50px;
+    background-color: #e4e4e4;
+    overflow-y: scroll; }
+    .main-section .books-display .row {
+      clear: both;
+      float: left;
+      position: relative;
+      top: 2px;
+      bottom: 30px; }
+      .main-section .books-display .row .book {
+        height: 200px;
+        width: 20%;
+        float: left;
+        margin-left: 4%;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden; }
+        .main-section .books-display .row .book .bookimg {
+          height: 100%;
+          width: 100%; }
+        .main-section .books-display .row .book .bookcover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.8);
+          color: white;
+          opacity: 0; }
+          .main-section .books-display .row .book .bookcover .booktitle, .main-section .books-display .row .book .bookcover .bookinfo, .main-section .books-display .row .book .bookcover .bookreview {
+            text-align: center; }
+          .main-section .books-display .row .book .bookcover .booktitle {
+            margin-top: 25px; }
+          .main-section .books-display .row .book .bookcover .bookinfo {
+            font-size: 10px;
+            color: #ce993d; }
+          .main-section .books-display .row .book .bookcover .bookreview {
+            font-size: 10px;
+            color: white; }
+          .main-section .books-display .row .book .bookcover img {
+            height: 30px;
+            width: 40px;
+            display: block;
+            margin: 0 auto; }
+      .main-section .books-display .row .book:hover .bookcover {
+        opacity: 1; }
 
 .footer-text {
   clear: both;
@@ -341,9 +281,8 @@ body {
   position: absolute;
   top: 765px;
   left: 100px; }
-
-.space {
-  word-spacing: 5px; }
+  .footer-text .space {
+    word-spacing: 5px; }
 
 @media (min-width: 768px) and (max-width: 978px) {
   .header {
@@ -380,13 +319,13 @@ body {
   .main-menu > li > a {
     margin-left: 30px; }
 
-  #dropdownmenu1, #dropdownmenu2 {
+  .dropdownmenu1, .dropdownmenu2 {
     bottom: 4px; }
 
-  #dropdownmenu1 {
+  .dropdownmenu1 {
     left: -5px; }
 
-  #dropdownmenu2 {
+  .dropdownmenu2 {
     left: -10px;
     margin-right: 60px; }
 
@@ -520,15 +459,15 @@ body {
     font-size: 11px;
     margin-left: 30px; }
 
-  #dropdownmenu1, #dropdownmenu2 {
+  .dropdownmenu1, .dropdownmenu2 {
     width: 60px;
     font-size: 11px;
     bottom: 2px; }
 
-  #dropdownmenu1 {
+  .dropdownmenu1 {
     left: -5px; }
 
-  #dropdownmenu2 {
+  .dropdownmenu2 {
     left: -15px;
     margin-right: 15px; }
 
