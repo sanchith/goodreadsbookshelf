@@ -72,7 +72,44 @@ body {
     width: 30px;
     margin-top: 3px;
     margin-right: 10px;
+    cursor: pointer;
     display: none; }
+  .main-nav .hamburger-dropdown {
+    z-index: 1000000;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 100%;
+    background: #131313;
+    position: absolute;
+    text-align: center;
+    top: 103px; }
+  .main-nav .hamburger-dropdown ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none; }
+  .main-nav .hamburger-dropdown li {
+    display: block;
+    padding: 15px 0 15px 0;
+    border-bottom: #1d1f20 1px solid; }
+  .main-nav .hamburger-dropdown li:hover {
+    display: block;
+    background: #181818;
+    padding: 15px 0 15px 0;
+    border-bottom: #1d1f20 1px solid; }
+  .main-nav .hamburger-dropdown ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #fff; }
+  .main-nav .hamburger-dropdown ul li a:hover {
+    color: #ce993d;
+    text-decoration: none; }
+  .main-nav .hamburger-dropdown a {
+    text-decoration: none;
+    color: white; }
+  .main-nav .hamburger-dropdown a:hover {
+    text-decoration: none;
+    color: #ce993d; }
   .main-nav .main-menu {
     float: right;
     text-align: center;
@@ -146,7 +183,8 @@ body {
       border-radius: 3px; }
     .main-section .tools-menu h5:hover {
       color: #ce993d;
-      border: 1px solid #ce993d; }
+      border: 1px solid #ce993d;
+      cursor: pointer; }
   .main-section .main-right {
     float: right;
     margin-top: 30px;
@@ -162,12 +200,14 @@ body {
       color: white;
       background-color: #ce993d; }
     .main-section .main-right .main-tabs .tab-highlight:hover {
-      color: #2d2d2d; }
+      color: #2d2d2d;
+      cursor: pointer; }
     .main-section .main-right .main-tabs .tab {
       color: #2d2d2d;
       background-color: #e4e4e4; }
     .main-section .main-right .main-tabs .tab:hover {
-      color: #ce993d; }
+      color: #ce993d;
+      cursor: pointer; }
     .main-section .main-right hr {
       text-align: center;
       width: 99.5%;
@@ -213,11 +253,13 @@ body {
         margin-left: 30%; }
       .main-section .filter-options .options-text .profile p {
         margin-left: 39%; }
-      .main-section .filter-options .options-text .sort:hover .icons, .main-section .filter-options .options-text .stats:hover .icons, .main-section .filter-options .options-text .bestsellers:hover .icons, .main-section .filter-options .options-text .recos:hover .icons, .main-section .filter-options .options-text .bookclub:hover .icons, .main-section .filter-options .options-text .network:hover .icons, .main-section .filter-options .options-text .profile:hover .icons {
-        display: none; }
-      .main-section .filter-options .options-text .sort:hover .icon-hover, .main-section .filter-options .options-text .stats:hover .icon-hover, .main-section .filter-options .options-text .bestsellers:hover .icon-hover, .main-section .filter-options .options-text .recos:hover .icon-hover, .main-section .filter-options .options-text .bookclub:hover .icon-hover, .main-section .filter-options .options-text .network:hover .icon-hover, .main-section .filter-options .options-text .profile:hover .icon-hover {
-        display: block;
-        margin-bottom: 10px; }
+      .main-section .filter-options .options-text .sort:hover, .main-section .filter-options .options-text .stats:hover, .main-section .filter-options .options-text .bestsellers:hover, .main-section .filter-options .options-text .recos:hover, .main-section .filter-options .options-text .bookclub:hover, .main-section .filter-options .options-text .network:hover, .main-section .filter-options .options-text .profile:hover {
+        cursor: pointer; }
+        .main-section .filter-options .options-text .sort:hover .icons, .main-section .filter-options .options-text .stats:hover .icons, .main-section .filter-options .options-text .bestsellers:hover .icons, .main-section .filter-options .options-text .recos:hover .icons, .main-section .filter-options .options-text .bookclub:hover .icons, .main-section .filter-options .options-text .network:hover .icons, .main-section .filter-options .options-text .profile:hover .icons {
+          display: none; }
+        .main-section .filter-options .options-text .sort:hover .icon-hover, .main-section .filter-options .options-text .stats:hover .icon-hover, .main-section .filter-options .options-text .bestsellers:hover .icon-hover, .main-section .filter-options .options-text .recos:hover .icon-hover, .main-section .filter-options .options-text .bookclub:hover .icon-hover, .main-section .filter-options .options-text .network:hover .icon-hover, .main-section .filter-options .options-text .profile:hover .icon-hover {
+          display: block;
+          margin-bottom: 10px; }
   .main-section .books-display {
     float: right;
     width: 65%;
@@ -258,10 +300,12 @@ body {
           .main-section .books-display .row .book .bookcover .booktitle {
             margin-top: 25px; }
           .main-section .books-display .row .book .bookcover .bookinfo {
-            font-size: 10px;
+            font-size: 12px;
             color: #ce993d; }
+          .main-section .books-display .row .book .bookcover .details:hover {
+            cursor: pointer; }
           .main-section .books-display .row .book .bookcover .bookreview {
-            font-size: 10px;
+            font-size: 12px;
             color: white; }
           .main-section .books-display .row .book .bookcover img {
             height: 30px;

@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>TIY Raleigh Demo</title>
+    <title>TIY GoodReads Bookshelf</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="script.js"></script>
   </head>
   <body>
 
     <div class="header">
       <div class="logo">
-        <img src="images/goodreadslogo3.png">
+        <a href="index.html"><img src="images/goodreadslogo3.png"></a>
       </div>
       <div class="header-search">
         <input class="header-input" placeholder="SEARCH...">
@@ -42,13 +43,22 @@
       </ul>
       </div>
       <div class="main-nav-hamburger">
-        <img src="images/hamburger-white.png">
+        <img class="hamburger" src="images/hamburger-white.png">
+        <div class="hamburger-dropdown">
+          <ul>
+            <a href="#"><li>HOME</li></a>
+            <a href="#"><li>BROWSE</li></a>
+            <a href="#"><li>COMMUNITY</li></a>
+          </ul>
+        </div>
       </div>
+
       <ul class="main-menu">
-        <li><a class="menu-highlight" href="#">BOOKSHELF</a></li>
-        <li><a class="menu-item" href="#">HOME</a></li>
+        <li><a class="menu-highlight" href="index.html">BOOKSHELF</a></li>
+        <li><a class="menu-item" href="index.html">HOME</a></li>
       </ul>
     </div>
+
     <div class="sub-nav">
     </div>
 
@@ -65,10 +75,10 @@
 
       <div class="main-right">
         <div class="main-tabs">
-          <h5 class="tab-highlight">ALL</h5>
-          <h5 class="tab">READ</h5>
-          <h5 class="tab">TO READ</h5>
-          <h5 class="tab">READING</h5>
+          <h5 class="tab-highlight tab-all">ALL</h5>
+          <h5 class="tab tab-read">READ</h5>
+          <h5 class="tab tab-toread">TO READ</h5>
+          <h5 class="tab tab-reading">READING</h5>
       </div>
       <hr>
       </div>
@@ -114,7 +124,8 @@
         </div>
 
         <div class="books-display">
-          <div class="row">
+          <!-- All books category -->
+          <div class="row all">
             <div class="book">
               <img class="bookimg" src="images/book1.jpg">
               <div class="bookcover">
@@ -124,7 +135,17 @@
                 <img src="images/rate.png">
                 <p class="bookreview">1460 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book1-detail">See more details</p>
+                <div class="remodal popup" data-remodal-id="book1-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book1.jpg">
+                  <h1>To Kill a Mockingbird</h1>
+                  <h3>by Harper Lee</h3>
+                  <br><br>
+                  <!-- <img src="images/rate.png">
+                  <p class="bookreview">1460 Reviews</p> -->
+                  <p class="description">The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.<br><br>Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos.</p>
+                </div>
               </div>
             </div>
             <div class="book">
@@ -136,7 +157,15 @@
                 <img src="images/rate.png">
                 <p class="bookreview">310 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book2-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book2-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book2.jpg">
+                  <h1>In a Dark, Dark Wood</h1>
+                  <h3>by Ruth Ware</h3>
+                  <br><br>
+                  <p>What should be a cozy and fun-filled weekend deep in the English countryside takes a sinister turn in Ruth Ware’s suspenseful, compulsive, and darkly twisted psychological thriller.<br><br>Sometimes the only thing to fear…is yourself.<br><br>When reclusive writer Leonora is invited to the English countryside for a weekend away, she reluctantly agrees to make the trip. But as the first night falls, revelations unfold among friends old and new, an unnerving memory shatters Leonora’s reserve, and a haunting realization creeps in: the party is not alone in the woods.</p>
+                </div>
               </div>
             </div>
             <div class="book">
@@ -148,7 +177,15 @@
                 <img src="images/rate.png">
                 <p class="bookreview">780 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book3-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book3-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book3.jpg">
+                  <h1>My Grandmother Asked Me to Tell You She's Sorry</h1>
+                  <h3>by Fredrik Backman</h3>
+                  <br><br>
+                  <p>Elsa is seven years old and different. Her grandmother is seventy-seven years old and crazy—as in standing-on-the-balcony-firing-paintball-guns-at-strangers crazy. She is also Elsa’s best, and only, friend. At night Elsa takes refuge in her grandmother’s stories, in the Land-of-Almost-Awake and the Kingdom of Miamas, where everybody is different and nobody needs to be normal.<br><br>When Elsa’s grandmother dies and leaves behind a series of letters apologizing to people she has wronged, Elsa’s greatest adventure begins. Her grandmother’s instructions lead her to an apartment building full of drunks, monsters, attack dogs, and old crones but also to the truth about fairy tales and kingdoms and a grandmother like no other.<p>
+                </div>
               </div>
             </div>
             <div class="book">
@@ -160,7 +197,15 @@
                 <img src="images/rate.png">
                 <p class="bookreview">590 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book4-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book4-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book4.jpg">
+                  <h1>The Chemist</h1>
+                  <h3>by Stephenie Meyer</h3>
+                  <br><br>
+                  <p>In this gripping page-turner, an ex-agent on the run from her former employers must take one more case to clear her name and save her life. She used to work for the U.S. government, but very few people ever knew that. An expert in her field, she was one of the darkest secrets of an agency so clandestine it doesn’t even have a name. And when they decided she was a liability, they came for her without warning. Now, she rarely stays in the same place or uses the same name for long. They’ve killed the only other person she trusted, but something she knows still poses a threat. They want her dead, and soon. When her former handler offers her a way out, she realizes it’s her only chance to erase the giant target on her back. But it means taking one last job for her ex-employers. To her horror, the information she acquires only makes her situation more dangerous. Resolving to meet the threat head on, she prepares for the toughest fight of her life, but finds herself falling for a man who can only complicate her likelihood of survival. As she sees her choices being rapidly whittled down, she must apply her unique talents in ways she never dreamed of.<p>
+                </div>
               </div>
             </div>
             <div class="book">
@@ -172,7 +217,15 @@
                 <img src="images/rate.png">
                 <p class="bookreview">250 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book5-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book5-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book5.jpg">
+                  <h1>The Little Paris Bookshop</h1>
+                  <h3>by Nina George</h3>
+                  <br><br>
+                  <p>Monsieur Perdu can prescribe the perfect book for a broken heart. But can he fix his own?<br><br>Monsieur Perdu calls himself a literary apothecary. From his floating bookstore in a barge on the Seine, he prescribes novels for the hardships of life. Using his intuitive feel for the exact book a reader needs, Perdu mends broken hearts and souls. The only person he can't seem to heal through literature is himself; he's still haunted by heartbreak after his great love disappeared. She left him with only a letter, which he has never opened.<br><br>After Perdu is finally tempted to read the letter, he hauls anchor and departs on a mission to the south of France, hoping to make peace with his loss and discover the end of the story. Joined by a bestselling but blocked author and a lovelorn Italian chef, Perdu travels along the country’s rivers, dispensing his wisdom and his books, showing that the literary world can take the human soul on a journey to heal itself.</p>
+                </div>
               </div>
             </div>
             <div class="book">
@@ -184,7 +237,15 @@
                 <img src="images/rate.png">
                 <p class="bookreview">2260 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book6-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book6-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book6.jpg">
+                  <h1>Two by Two</h1>
+                  <h3>by Nicholas Sparks</h3>
+                  <br><br>
+                  <p>At 32, Russell Green has it all: a stunning wife, a lovable six year-old daughter, a successful career as an advertising executive and an expansive home in Charlotte. He is living the dream, and his marriage to the bewitching Vivian is the center of that. But underneath the shiny surface of this perfect existence, fault lines are beginning to appear...and no one is more surprised than Russ when he finds every aspect of the life he took for granted turned upside down. In a matter of months, Russ finds himself without a job or wife, caring for his young daughter while struggling to adapt to a new and baffling reality. Throwing himself into the wilderness of single parenting, Russ embarks on a journey at once terrifying and rewarding-one that will test his abilities and his emotional resources beyond anything he ever imagined.</p>
+                </div>
               </div>
             </div>
             <div class="book">
@@ -196,7 +257,15 @@
                 <img src="images/rate.png">
                 <p class="bookreview">110 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book7-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book7-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book7.jpg">
+                  <h1>A Dog's Purpose</h1>
+                  <h3>by W. Bruce Cameron</h3>
+                  <br><br>
+                  <p>Heartwarming, insightful, and often laugh-out-loud funny, A Dog's Purpose is not only the emotional and hilarious story of a dog's many lives, but also a dog's-eye commentary on human relationships and the unbreakable bonds between man and man's best friend. This moving and beautifully crafted story teaches us that love never dies, that our true friends are always with us, and that every creature on earth is born with a purpose.</p>
+                </div>
               </div>
             </div>
             <div class="book">
@@ -208,7 +277,15 @@
                 <img src="images/rate.png">
                 <p class="bookreview">680 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book8-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book8-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book8.jpg">
+                  <h1>Milk and Honey</h1>
+                  <h3>by Rupi Kaur</h3>
+                  <br><br>
+                  <p>Milk and Honey is a collection of poetry and prose about survival. About the experience of violence, abuse, love, loss, and femininity.<br><br>The book is divided into four chapters, and each chapter serves a different purpose. Deals with a different pain. Heals a different heartache. Milk and Honey takes readers through a journey of the most bitter moments in life and finds sweetness in them because there is sweetness everywhere if you are just willing to look.</p>
+                </div>
               </div>
             </div>
             <div class="book">
@@ -220,7 +297,15 @@
                 <img src="images/rate.png">
                 <p class="bookreview">98 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book9-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book9-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book9.jpg">
+                  <h1>Untamed: The Wildest Woman in America</h1>
+                  <h3>by Will Harlan</h3>
+                  <br><br>
+                  <p>Carol Ruckdeschel is the wildest woman in America. She wrestles alligators, eats roadkill, rides horses bareback, and lives in a ramshackle cabin that she built by hand in an island wilderness. A combination of Henry David Thoreau and Jane Goodall, Carol is a self-taught scientist who has become a tireless defender of sea turtles on Cumberland Island, a national park off the coast of Georgia.<br><br>Cumberland, the country’s largest and most biologically diverse barrier island, is celebrated for its windswept dunes and feral horses. Steel magnate Thomas Carnegie once owned much of the island, and in recent years, Carnegie heirs and the National Park Service have clashed with Carol over the island’s future. What happens when a dirt-poor naturalist with only a high school diploma becomes an outspoken advocate on a celebrated but divisive island? Untamed is the story of an American original standing her ground and fighting for what she believes in, no matter the cost.</p>
+                </div>
               </div>
             </div>
             <div class="book">
@@ -232,7 +317,15 @@
                 <img src="images/rate.png">
                 <p class="bookreview">3360 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book10-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book10-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book10.jpg">
+                  <h1>The Underground Railroad (Oprah's Book Club)</h1>
+                  <h3>by Colson Whitehead</h3>
+                  <br><br>
+                  <p>Cora is a slave on a cotton plantation in Georgia. Life is hell for all the slaves, but especially bad for Cora; an outcast even among her fellow Africans, she is coming into womanhood—where even greater pain awaits. When Caesar, a recent arrival from Virginia, tells her about the Underground Railroad, they decide to take a terrifying risk and escape. Matters do not go as planned—Cora kills a young white boy who tries to capture her. Though they manage to find a station and head north, they are being hunted.<br><br>In Whitehead’s ingenious conception, the Underground Railroad is no mere metaphor—engineers and conductors operate a secret network of tracks and tunnels beneath the Southern soil. Cora and Caesar’s first stop is South Carolina, in a city that initially seems like a haven. But the city’s placid surface masks an insidious scheme designed for its black denizens. And even worse: Ridgeway, the relentless slave catcher, is close on their heels. Forced to flee again, Cora embarks on a harrowing flight, state by state, seeking true freedom.<br><br>Like the protagonist of Gulliver’s Travels, Cora encounters different worlds at each stage of her journey—hers is an odyssey through time as well as space. As Whitehead brilliantly re-creates the unique terrors for black people in the pre–Civil War era, his narrative seamlessly weaves the saga of America from the brutal importation of Africans to the unfulfilled promises of the present day. The Underground Railroad is at once a kinetic adventure tale of one woman’s ferocious will to escape the horrors of bondage and a shattering, powerful meditation on the history we all share.</p>
+                </div>
               </div>
             </div>
             <div class="book">
@@ -244,7 +337,15 @@
                 <img src="images/rate.png">
                 <p class="bookreview">960 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book11-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book11-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book11.jpg">
+                  <h1>Chronicles, Volume One</h1>
+                  <h3>by Bob Dylan</h3>
+                  <br><br>
+                  <p>The celebrated first memoir from arguably the most influential singer-songwriter in the country, Bob Dylan.<br><br>“I’d come from a long ways off and had started a long ways down. But now destiny was about to manifest itself. I felt like it was looking right at me and nobody else.”<br><br>So writes Bob Dylan in Chronicles: Volume One, his remarkable book exploring critical junctures in his life and career. Through Dylan’s eyes and open mind, we see Greenwich Village, circa 1961, when he first arrives in Manhattan. Dylan’s New York is a magical city of possibilities—smoky, nightlong parties; literary awakenings; transient loves and unbreakable friendships. Elegiac observations are punctuated by jabs of memories, penetrating and tough. With the book’s side trips to New Orleans, Woodstock, Minnesota, and points west, Chronicles: Volume One is an intimate and intensely personal recollection of extraordinary times.<br><br>By turns revealing, poetical, passionate, and witty, Chronicles: Volume One is a mesmerizing window on Bob Dylan’s thoughts and influences. Dylan’s voice is distinctively American: generous of spirit, engaged, fanciful, and rhythmic. Utilizing his unparalleled gifts of storytelling and the exquisite expressiveness that are the hallmarks of his music, Bob Dylan turns Chronicles: Volume One into a poignant reflection on life, and the people and places that helped shape the man and the art.</p>
+                </div>
               </div>
             </div>
             <div class="book">
@@ -256,18 +357,286 @@
                 <img src="images/rate.png">
                 <p class="bookreview">1160 Reviews</p>
                 <br>
-                <p class="bookinfo">See more details</p>
+                <p class="bookinfo details" data-remodal-target="book12-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book12-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book12.jpg">
+                  <h1>Harry Potter and the Cursed Child - Parts I,II</h1>
+                  <h3>by J. K. Rowling, John Tiffany, Jack Thorne</h3>
+                  <br><br>
+                  <p>"The Eighth Story. Nineteen Years Later.<br><br>Based on an original new story by J.K. Rowling, Jack Thorne and John Tiffany, a new play by Jack Thorne, Harry Potter and the Cursed Child is the eighth story in the Harry Potter series and the first official Harry Potter story to be presented on stage. The play will receive its world premiere in London’s West End on July 30, 2016.<br><br>It was always difficult being Harry Potter and it isn’t much easier now that he is an overworked employee of the Ministry of Magic, a husband and father of three school-age children.<br><br>While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places."</p>
+                </div>
               </div>
             </div>
-
           </div>
-        </div>
+          <!-- row = all -->
 
+          <!-- Read books category -->
+          <div class="row read">
+            <div class="book">
+              <img class="bookimg" src="images/book1.jpg">
+              <div class="bookcover">
+                <p class="booktitle">To Kill a Mockingbird</p>
+                <p class="bookinfo">by Harper Lee</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">1460 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book1-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book1-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book1.jpg">
+                  <h1>To Kill a Mockingbird</h1>
+                  <p>by Harper Lee</p>
+                  <br>
+                  <br>
+                  <p class="description">The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.<br>Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="book">
+              <img class="bookimg" src="images/book3.jpg">
+              <div class="bookcover">
+                <p class="booktitle">My Grandmother Asked Me to Tell You She's Sorry</p>
+                <p class="bookinfo">by Fredrik Backman</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">780 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book3-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book3-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book3.jpg">
+                  <h1>My Grandmother Asked Me to Tell You She's Sorry</h1>
+                  <h3>by Fredrik Backman</h3>
+                  <br><br>
+                  <p>Elsa is seven years old and different. Her grandmother is seventy-seven years old and crazy—as in standing-on-the-balcony-firing-paintball-guns-at-strangers crazy. She is also Elsa’s best, and only, friend. At night Elsa takes refuge in her grandmother’s stories, in the Land-of-Almost-Awake and the Kingdom of Miamas, where everybody is different and nobody needs to be normal.<br><br>When Elsa’s grandmother dies and leaves behind a series of letters apologizing to people she has wronged, Elsa’s greatest adventure begins. Her grandmother’s instructions lead her to an apartment building full of drunks, monsters, attack dogs, and old crones but also to the truth about fairy tales and kingdoms and a grandmother like no other.<p>
+                </div>
+              </div>
+            </div>
+            <div class="book">
+              <img class="bookimg" src="images/book5.jpg">
+              <div class="bookcover">
+                <p class="booktitle">The Little Paris Bookshop</p>
+                <p class="bookinfo">by Nina George</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">250 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book5-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book5-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book5.jpg">
+                  <h1>he Little Paris Bookshop</h1>
+                  <h3>by Nina George</h3>
+                  <br><br>
+                  <p>Monsieur Perdu can prescribe the perfect book for a broken heart. But can he fix his own?<br><br>Monsieur Perdu calls himself a literary apothecary. From his floating bookstore in a barge on the Seine, he prescribes novels for the hardships of life. Using his intuitive feel for the exact book a reader needs, Perdu mends broken hearts and souls. The only person he can't seem to heal through literature is himself; he's still haunted by heartbreak after his great love disappeared. She left him with only a letter, which he has never opened.<br><br>After Perdu is finally tempted to read the letter, he hauls anchor and departs on a mission to the south of France, hoping to make peace with his loss and discover the end of the story. Joined by a bestselling but blocked author and a lovelorn Italian chef, Perdu travels along the country’s rivers, dispensing his wisdom and his books, showing that the literary world can take the human soul on a journey to heal itself.</p>
+                </div>
+              </div>
+            </div>
+            <div class="book">
+              <img class="bookimg" src="images/book6.jpg">
+              <div class="bookcover">
+                <p class="booktitle">Two by Two</p>
+                <p class="bookinfo">by Nicholas Sparks</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">2260 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book6-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book6-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book6.jpg">
+                  <h1>Two by Two</h1>
+                  <h3>by Nicholas Sparks</h3>
+                  <br><br>
+                  <p>At 32, Russell Green has it all: a stunning wife, a lovable six year-old daughter, a successful career as an advertising executive and an expansive home in Charlotte. He is living the dream, and his marriage to the bewitching Vivian is the center of that. But underneath the shiny surface of this perfect existence, fault lines are beginning to appear...and no one is more surprised than Russ when he finds every aspect of the life he took for granted turned upside down. In a matter of months, Russ finds himself without a job or wife, caring for his young daughter while struggling to adapt to a new and baffling reality. Throwing himself into the wilderness of single parenting, Russ embarks on a journey at once terrifying and rewarding-one that will test his abilities and his emotional resources beyond anything he ever imagined.</p>
+                </div>
+              </div>
+            </div>
+            <div class="book">
+              <img class="bookimg" src="images/book8.jpg">
+              <div class="bookcover">
+                <p class="booktitle">Milk and Honey</p>
+                <p class="bookinfo">by Rupi Kaur</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">680 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book8-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book8-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book8.jpg">
+                  <h1>Milk and Honey</h1>
+                  <h3>by Rupi Kaur</h3>
+                  <br><br>
+                  <p>Milk and Honey is a collection of poetry and prose about survival. About the experience of violence, abuse, love, loss, and femininity.<br><br>The book is divided into four chapters, and each chapter serves a different purpose. Deals with a different pain. Heals a different heartache. Milk and Honey takes readers through a journey of the most bitter moments in life and finds sweetness in them because there is sweetness everywhere if you are just willing to look.</p>
+                </div>
+              </div>
+            </div>
+            <div class="book">
+              <img class="bookimg" src="images/book9.jpg">
+              <div class="bookcover">
+                <p class="booktitle">Untamed: The Wildest Woman in America</p>
+                <p class="bookinfo">by Will Harlan</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">98 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book9-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book9-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book9.jpg">
+                  <h1>Untamed: The Wildest Woman in America</h1>
+                  <h3>by Will Harlan</h3>
+                  <br><br>
+                  <p>Carol Ruckdeschel is the wildest woman in America. She wrestles alligators, eats roadkill, rides horses bareback, and lives in a ramshackle cabin that she built by hand in an island wilderness. A combination of Henry David Thoreau and Jane Goodall, Carol is a self-taught scientist who has become a tireless defender of sea turtles on Cumberland Island, a national park off the coast of Georgia.<br><br>Cumberland, the country’s largest and most biologically diverse barrier island, is celebrated for its windswept dunes and feral horses. Steel magnate Thomas Carnegie once owned much of the island, and in recent years, Carnegie heirs and the National Park Service have clashed with Carol over the island’s future. What happens when a dirt-poor naturalist with only a high school diploma becomes an outspoken advocate on a celebrated but divisive island? Untamed is the story of an American original standing her ground and fighting for what she believes in, no matter the cost.</p>
+                </div>
+              </div>
+            </div>
+            <div class="book">
+              <img class="bookimg" src="images/book12.jpg">
+              <div class="bookcover">
+                <p class="booktitle">Harry Potter and the Cursed Child - Parts I,II</p>
+                <p class="bookinfo">by J. K. Rowling, John Tiffany, Jack Thorne</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">1160 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book12-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book12-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book12.jpg">
+                  <h1>Harry Potter and the Cursed Child - Parts I,II</h1>
+                  <h3>by J. K. Rowling, John Tiffany, Jack Thorne</h3>
+                  <br><br>
+                  <p>"The Eighth Story. Nineteen Years Later.<br><br>Based on an original new story by J.K. Rowling, Jack Thorne and John Tiffany, a new play by Jack Thorne, Harry Potter and the Cursed Child is the eighth story in the Harry Potter series and the first official Harry Potter story to be presented on stage. The play will receive its world premiere in London’s West End on July 30, 2016.<br><br>It was always difficult being Harry Potter and it isn’t much easier now that he is an overworked employee of the Ministry of Magic, a husband and father of three school-age children.<br><br>While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row = read -->
+
+          <!-- To-Read books category -->
+          <div class="row to-read">
+            <div class="book">
+              <img class="bookimg" src="images/book2.jpg">
+              <div class="bookcover">
+                <p class="booktitle">In a Dark, Dark Wood</p>
+                <p class="bookinfo">by Ruth Ware</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">310 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book2-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book2-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book2.jpg">
+                  <h1>In a Dark, Dark Wood</h1>
+                  <h3>by Ruth Ware</h3>
+                  <br><br>
+                  <p>What should be a cozy and fun-filled weekend deep in the English countryside takes a sinister turn in Ruth Ware’s suspenseful, compulsive, and darkly twisted psychological thriller.<br><br>Sometimes the only thing to fear…is yourself.<br><br>When reclusive writer Leonora is invited to the English countryside for a weekend away, she reluctantly agrees to make the trip. But as the first night falls, revelations unfold among friends old and new, an unnerving memory shatters Leonora’s reserve, and a haunting realization creeps in: the party is not alone in the woods.</p>
+                </div>
+              </div>
+            </div>
+            <div class="book">
+              <img class="bookimg" src="images/book7.jpg">
+              <div class="bookcover">
+                <p class="booktitle">A Dog's Purpose</p>
+                <p class="bookinfo">by W. Bruce Cameron</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">110 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book7-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book7-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book7.jpg">
+                  <h1>A Dog's Purpose</h1>
+                  <h3>by W. Bruce Cameron</h3>
+                  <br><br>
+                  <p>Heartwarming, insightful, and often laugh-out-loud funny, A Dog's Purpose is not only the emotional and hilarious story of a dog's many lives, but also a dog's-eye commentary on human relationships and the unbreakable bonds between man and man's best friend. This moving and beautifully crafted story teaches us that love never dies, that our true friends are always with us, and that every creature on earth is born with a purpose.</p>
+                </div>
+              </div>
+            </div>
+            <div class="book">
+              <img class="bookimg" src="images/book11.jpg">
+              <div class="bookcover">
+                <p class="booktitle">Chronicles, Volume One</p>
+                <p class="bookinfo">by Bob Dylan</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">960 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book11-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book11-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book11.jpg">
+                  <h1>Chronicles, Volume One</h1>
+                  <h3>by Bob Dylan</h3>
+                  <br><br>
+                  <p>The celebrated first memoir from arguably the most influential singer-songwriter in the country, Bob Dylan.<br><br>“I’d come from a long ways off and had started a long ways down. But now destiny was about to manifest itself. I felt like it was looking right at me and nobody else.”<br><br>So writes Bob Dylan in Chronicles: Volume One, his remarkable book exploring critical junctures in his life and career. Through Dylan’s eyes and open mind, we see Greenwich Village, circa 1961, when he first arrives in Manhattan. Dylan’s New York is a magical city of possibilities—smoky, nightlong parties; literary awakenings; transient loves and unbreakable friendships. Elegiac observations are punctuated by jabs of memories, penetrating and tough. With the book’s side trips to New Orleans, Woodstock, Minnesota, and points west, Chronicles: Volume One is an intimate and intensely personal recollection of extraordinary times.<br><br>By turns revealing, poetical, passionate, and witty, Chronicles: Volume One is a mesmerizing window on Bob Dylan’s thoughts and influences. Dylan’s voice is distinctively American: generous of spirit, engaged, fanciful, and rhythmic. Utilizing his unparalleled gifts of storytelling and the exquisite expressiveness that are the hallmarks of his music, Bob Dylan turns Chronicles: Volume One into a poignant reflection on life, and the people and places that helped shape the man and the art.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row = to-read -->
+
+          <!-- Reading books category -->
+          <div class="row reading">
+            <div class="book">
+              <img class="bookimg" src="images/book4.jpg">
+              <div class="bookcover">
+                <p class="booktitle">The Chemist</p>
+                <p class="bookinfo">by Stephenie Meyer</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">590 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book4-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book4-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book4.jpg">
+                  <h1>The Chemist</h1>
+                  <h3>by Stephenie Meyer</h3>
+                  <br><br>
+                  <p>In this gripping page-turner, an ex-agent on the run from her former employers must take one more case to clear her name and save her life. She used to work for the U.S. government, but very few people ever knew that. An expert in her field, she was one of the darkest secrets of an agency so clandestine it doesn’t even have a name. And when they decided she was a liability, they came for her without warning. Now, she rarely stays in the same place or uses the same name for long. They’ve killed the only other person she trusted, but something she knows still poses a threat. They want her dead, and soon. When her former handler offers her a way out, she realizes it’s her only chance to erase the giant target on her back. But it means taking one last job for her ex-employers. To her horror, the information she acquires only makes her situation more dangerous. Resolving to meet the threat head on, she prepares for the toughest fight of her life, but finds herself falling for a man who can only complicate her likelihood of survival. As she sees her choices being rapidly whittled down, she must apply her unique talents in ways she never dreamed of.<p>
+                </div>
+              </div>
+            </div>
+            <div class="book">
+              <img class="bookimg" src="images/book10.jpg">
+              <div class="bookcover">
+                <p class="booktitle">The Underground Railroad (Oprah's Book Club)</p>
+                <p class="bookinfo">by Colson Whitehead</p>
+                <br>
+                <img src="images/rate.png">
+                <p class="bookreview">3360 Reviews</p>
+                <br>
+                <p class="bookinfo details" data-remodal-target="book10-detail">See more details</p>
+                <div class="remodal" data-remodal-id="book10-detail">
+                  <button data-remodal-action="close" class="remodal-close"></button>
+                  <img class="bookimg" src="images/book10.jpg">
+                  <h1>The Underground Railroad (Oprah's Book Club)</h1>
+                  <h3>by Colson Whitehead</h3>
+                  <br><br>
+                  <p>Cora is a slave on a cotton plantation in Georgia. Life is hell for all the slaves, but especially bad for Cora; an outcast even among her fellow Africans, she is coming into womanhood—where even greater pain awaits. When Caesar, a recent arrival from Virginia, tells her about the Underground Railroad, they decide to take a terrifying risk and escape. Matters do not go as planned—Cora kills a young white boy who tries to capture her. Though they manage to find a station and head north, they are being hunted.<br><br>In Whitehead’s ingenious conception, the Underground Railroad is no mere metaphor—engineers and conductors operate a secret network of tracks and tunnels beneath the Southern soil. Cora and Caesar’s first stop is South Carolina, in a city that initially seems like a haven. But the city’s placid surface masks an insidious scheme designed for its black denizens. And even worse: Ridgeway, the relentless slave catcher, is close on their heels. Forced to flee again, Cora embarks on a harrowing flight, state by state, seeking true freedom.<br><br>Like the protagonist of Gulliver’s Travels, Cora encounters different worlds at each stage of her journey—hers is an odyssey through time as well as space. As Whitehead brilliantly re-creates the unique terrors for black people in the pre–Civil War era, his narrative seamlessly weaves the saga of America from the brutal importation of Africans to the unfulfilled promises of the present day. The Underground Railroad is at once a kinetic adventure tale of one woman’s ferocious will to escape the horrors of bondage and a shattering, powerful meditation on the history we all share.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row = reading -->
+        </div>
+        <!-- end of book display -->
     </div>
 
     <div class="footer-text">
       <p>© 2016 Goodreads Inc<span class="space"> | about us | advertise | author program | jobs | api | our blog | authors/advertisers blog | terms  | privacy | help</span></p>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/remodal.min.js"></script>
+    <script src="js/script.js"></script>
+
   </body>
-</head>
+</html>

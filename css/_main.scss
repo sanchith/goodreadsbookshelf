@@ -52,6 +52,7 @@
     h5:hover {
       color: $highlight-color;
       border: 1px solid $highlight-color;
+      cursor: pointer;
     }
   } //end of tools menu
 
@@ -75,6 +76,7 @@
       }
       .tab-highlight:hover {
         color: $navbar-color;
+        cursor: pointer;
       }
       .tab {
         color: $navbar-color;
@@ -82,6 +84,7 @@
       }
       .tab:hover {
         color: $highlight-color;
+        cursor: pointer;
       }
     }
 
@@ -160,6 +163,7 @@
         }
       }
       .sort:hover, .stats:hover, .bestsellers:hover, .recos:hover, .bookclub:hover, .network:hover, .profile:hover {
+        cursor: pointer;
         .icons {
           display: none;
         }
@@ -221,11 +225,14 @@
           margin-top: 25px;
         }
         .bookinfo {
-          font-size: 10px;
+          font-size: 12px;
           color: $highlight-color;
         }
+        .details:hover {
+          cursor: pointer;
+        }
         .bookreview {
-          font-size: 10px;
+          font-size: 12px;
           color: white;
         }
         img {
@@ -234,6 +241,18 @@
           display: block;
           margin: 0 auto;
         }
+        // .popup {
+        //   img {
+        //     height: 30px;
+        //     width: 40px;
+        //     display: block;
+        //     margin: 0 auto;
+        //   }
+        //   .description {
+        //     text-align: left;
+        //     color: read;
+        //   }
+        // }
       }
     } //end of book
 
@@ -242,7 +261,6 @@
         opacity: 1;
       }
     }
-
   } //end of row
 } //end of books-display
 

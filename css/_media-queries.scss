@@ -359,10 +359,11 @@
       display: none;
     }
     .main-nav-hamburger {
-      img {
-        display: block;
+        img {
+          display: block;
+        }
       }
-    }
+
     .main-menu {
       bottom: 12px;
       li {
@@ -467,4 +468,5 @@
     top: 755px;
     left: 0;
   }
+
 }
